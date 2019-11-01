@@ -1,0 +1,13 @@
+<!--pages/textimagelayout/textimagelayout.wxml-->
+<text class="titlename">{{titleName}}</text>
+<view class="contentbgview">
+<block wx:for="{{itemArray}}">
+<block wx:if="{{item.type==0}}">
+<text class="contenttext">{{item.content}}</text>
+</block>
+
+<block wx:else>
+<image class="contentimge" src="{{item.content}}" mode="aspectFit"></image>
+</block>
+</block>
+</view>

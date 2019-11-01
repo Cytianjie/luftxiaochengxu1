@@ -1,0 +1,100 @@
+/* pages/faxianhome/faxianhome.wxss */
+
+.itemtype1{
+  height: 185rpx;
+  position: relative;
+
+}
+.itemtype1 image{
+  position: absolute;
+  right: 0rpx;
+  width: 155rpx;
+  height: 155rpx;
+  top: 0rpx;
+  margin-right: 20rpx;
+  margin-top: 15rpx;
+
+}
+.itemtype1nametext{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 30rpx;
+  padding-top: 15rpx;
+  padding-left: 20rpx;
+  padding-right: 190rpx;
+}
+.itemtype1subtext{
+  width: 70%;
+  display: block;
+  padding-top: 40rpx;
+  padding-left: 20rpx;
+  padding-right: 190rpx;
+  color: gray;
+  font-size: 25rpx;
+}
+.lineview{
+  position: absolute;
+  bottom: 0rpx;
+  left: 20rpx;
+  right: 0rpx;
+  height: 2rpx;
+  background-color: rgba(220, 220, 220, 0.2);
+  
+}
+
+.itemtype2{
+  
+  position: relative;
+
+}
+.itemtype2nametext{
+  padding-left: 20rpx;
+  padding-top: 15rpx;
+  padding-right: 20rpx;
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 30rpx;
+}
+.itemtype2iamgebgview{
+  display: flex;
+  height: 165rpx;
+  overflow: hidden;
+  
+}
+.itemtype2iamgebgview image{
+  flex: 1;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-top: 15rpx;
+  
+}
+.itemtype2subtext{
+  width: 70%;
+  display: block;
+  padding-top: 13rpx;
+  padding-left: 20rpx;
+  padding-right: 190rpx;
+  color: gray;
+  font-size: 25rpx;
+  padding-bottom: 15rpx;
+}
+
+.itemtype3{
+  position: relative;
+
+}
+.viewobgview{
+  display: flex;
+  
+}
+.videoview{
+  flex: 1;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}

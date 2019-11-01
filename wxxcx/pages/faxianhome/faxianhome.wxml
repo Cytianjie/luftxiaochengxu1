@@ -1,0 +1,54 @@
+<!--pages/faxianhome/faxianhome.wxml-->
+<block wx:for="{{dataArray}}">
+
+
+  <block wx:if="{{item.itemtype == 1}}">
+    <template is="itemtype1" data="{{item, index}}"/> 
+  </block>
+
+  <block wx:if="{{item.itemtype == 2}}">
+    <template is="itemtype2" data="{{item, index}}"/>
+  </block>
+
+  <block wx:if="{{item.itemtype == 3}}">
+    <template is="itemtype3" data="{{item, index}}"/>
+  </block>
+
+
+
+</block>
+
+
+
+<template name="itemtype1" >
+  <view class="itemtype1" bindtap="itemTap" data-index='{{index}}'>
+    <text class="itemtype1nametext">{{item.nametext}}</text>
+    <text class="itemtype1subtext">{{item.subtext}}</text>
+    <image  src="{{item.imageurl1}}" mode="aspectFill"></image>
+    <view class="lineview"></view>
+  </view>
+</template>
+
+<template name="itemtype2" >
+  <view class="itemtype2" bindtap="itemTap" data-index='{{index}}'>
+    <text class="itemtype2nametext">{{item.nametext}}</text>
+    <view class="itemtype2iamgebgview">
+    <image  src="{{item.imageurl1}}" mode="widthFix"></image>
+    <image  src="{{item.imageurl2}}" mode="widthFix"></image>
+    <image  src="{{item.imageurl3}}" mode="widthFix"></image>
+    </view>
+    <text class="itemtype2subtext">{{item.subtext}}</text>
+    <view class="lineview"></view>
+  </view>
+</template>
+
+<template name="itemtype3" >
+  <view class="itemtype3" bindtap="itemTap" data-index='{{index}}'>
+     <text class="itemtype2nametext">{{item.nametext}}</text>
+     <view class="viewobgview">
+     <video class="videoview" id="{{index}}" src="{{item.videourl}}" bindplay="videobindplay" ></video>
+     </view>
+    <text class="itemtype2subtext">{{item.subtext}}</text>
+    <view class="lineview"></view>
+  </view>
+</template>

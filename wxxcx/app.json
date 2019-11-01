@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/duobaohome/duobaohome",
+    "pages/xiaoxihome/xiaoxihome",
+    "pages/fabuhome/fabuhome",
+    "pages/wodehome/wodehome",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/faxianhome/faxianhome",
+    "pages/h5s/webviewh5",
+    "pages/textimagelayout/textimagelayout"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/duobaohome/duobaohome",
+        "text": "夺宝",
+        "iconPath": "pages/images/duobaohomeno.png",
+        "selectedIconPath": "pages/images/duobaohomeselect.png"
+      },
+      {
+        "pagePath": "pages/faxianhome/faxianhome",
+        "text": "发现",
+        "iconPath": "pages/images/duobaofaxianno.png",
+        "selectedIconPath": "pages/images/duobaofaxianselect.png"
+      },
+      {
+        "pagePath": "pages/fabuhome/fabuhome",
+        "text": "发布",
+        "iconPath": "pages/images/duobaofabuselect.png",
+        "selectedIconPath": "pages/images/duobaofabuselect.png"
+      },
+      {
+        "pagePath": "pages/xiaoxihome/xiaoxihome",
+        "text": "消息",
+        "iconPath": "pages/images/duobaoxiaoxino.png",
+        "selectedIconPath": "pages/images/duobaoxiaoxiselect.png"
+      },
+      {
+        "pagePath": "pages/wodehome/wodehome",
+        "text": "我的",
+        "iconPath": "pages/images/duobaowodeno.png",
+        "selectedIconPath": "pages/images/duobaowodeselect.png"
+      }
+    ],
+    "selectedColor": "#FF6347"
+  },
+  "sitemapLocation": "sitemap.json"
+  
+}

@@ -1,0 +1,94 @@
+<!--pages/duobaohome/duobaohome.wxml-->
+<view class="topbody">
+
+  <view class="hometop">
+    <image class="homeimagetop" src="https://7778-wxxcx-p09my-1300521447.tcb.qcloud.la/%E9%A6%96%E9%A1%B5%E5%A4%B4%E5%9B%BE/16_41_05__10_30_2019.jpg?sign=c493f35b776550f8872b8d13711f2fd2&t=1572507891" mode="aspectFill">
+    </image>
+    <view class="hometopcontent">
+
+      <view class="cententbuttonview" id="xpdbview">
+          <image class="cenbuttonimage" src="/pages/images/homexinpin.jpg" mode="widthFix"></image>
+          <text>新品夺宝</text>
+      </view>
+      <view class="cententbuttonview" id="xpdbview">
+          <image class="cenbuttonimage" src="/pages/images/homeershouwupin.jpg" mode="widthFix"></image>
+          <text>二手夺宝</text>
+      </view>
+      <view class="cententbuttonview" id="xpdbview">
+          <image class="cenbuttonimage" src="/pages/images/duobaomentrs.png" mode="widthFix"></image>
+          <text>门庭若市</text>
+      </view>
+      <view class="cententbuttonview" id="xpdbview">
+          <image class="cenbuttonimage" src="/pages/images/homeshangcheng.png" mode="widthFix"></image>
+          <text>平台商城</text>
+      </view>
+
+    </view>
+
+  </view>
+
+  
+  <view class="homecententbg">
+    <image class="cenbgimage" src="/pages/images/duobaohomecenbag.png" mode="aspectFill"></image>
+    <view class="zuixinjiexiao">最新揭晓</view>
+    <view class="zuixinjiexiaoall">全部 >></view>
+    <view class="zuixinjiexiaoview">
+    <view class="newbgview">
+      <image src="{{newWinArray[0]['imageurl']}}" mode="scaleToFill"></image>
+      <text>{{newWinArray[0]["state"]}}</text>
+    </view>
+    <view class="newbgview">
+      <image src="{{newWinArray[1]['imageurl']}}" mode="scaleToFill"></image>
+      <text>{{newWinArray[1]["state"]}}</text>
+    </view>
+    <view class="newbgview">
+      <image src="{{newWinArray[2]['imageurl']}}" mode="scaleToFill"></image>
+      <text>{{newWinArray[2]["state"]}}</text>
+    </view>
+    </view>
+      
+  </view>
+
+  <scroll-view class="cengbgbgview" scroll-x="true"> 
+      <view class="cenitemview {{contentItemArray[0]==1?'taphi':''}}" id="cctap0" bindtap="centerCategoryTap">我的关注</view>
+      <view class="cenitemview {{contentItemArray[1]==1?'taphi':''}}" id="cctap1" bindtap="centerCategoryTap">热门推荐</view>
+      <view class="cenitemview {{contentItemArray[2]==1?'taphi':''}}" id="cctap2" bindtap="centerCategoryTap">男装女装</view>
+      <view class="cenitemview {{contentItemArray[3]==1?'taphi':''}}" id="cctap3" bindtap="centerCategoryTap">箱包手袋</view>
+      <view class="cenitemview {{contentItemArray[4]==1?'taphi':''}}" id="cctap4" bindtap="centerCategoryTap">美妆护肤</view>
+      <view class="cenitemview {{contentItemArray[5]==1?'taphi':''}}" id="cctap5" bindtap="centerCategoryTap">钟表珠宝</view>
+      <view class="cenitemview {{contentItemArray[6]==1?'taphi':''}}" id="cctap6" bindtap="centerCategoryTap">手机数码</view>
+      <view class="cenitemview {{contentItemArray[7]==1?'taphi':''}}" id="cctap7" bindtap="centerCategoryTap">电脑办公</view>
+      <view class="cenitemview {{contentItemArray[8]==1?'taphi':''}}" id="cctap8" bindtap="centerCategoryTap">家用电器</view>
+      <view class="cenitemview {{contentItemArray[9]==1?'taphi':''}}" id="cctap9" bindtap="centerCategoryTap">玩具乐器</view>
+      <view class="cenitemview {{contentItemArray[10]==1?'taphi':''}}" id="cctap10" bindtap="centerCategoryTap">母婴童装</view>
+      <view class="cenitemview {{contentItemArray[11]==1?'taphi':''}}" id="cctap11" bindtap="centerCategoryTap">酒水饮料</view>
+      <view class="cenitemview {{contentItemArray[12]==1?'taphi':''}}" id="cctap12" bindtap="centerCategoryTap">医药保健</view>
+      <view class="cenitemview {{contentItemArray[13]==1?'taphi':''}}" id="cctap13" bindtap="centerCategoryTap">计生情趣</view>
+      <view class="cenitemview {{contentItemArray[14]==1?'taphi':''}}" id="cctap14" bindtap="centerCategoryTap">户外运动</view>
+      <view class="cenitemview {{contentItemArray[15]==1?'taphi':''}}" id="cctap15" bindtap="centerCategoryTap">汽车生活</view>
+      <view class="cenitemview {{contentItemArray[16]==1?'taphi':''}}" id="cctap16" bindtap="centerCategoryTap">家具家装</view>
+      <view class="cenitemview {{contentItemArray[17]==1?'taphi':''}}" id="cctap17" bindtap="centerCategoryTap">礼品鲜花</view>
+      <view class="cenitemview {{contentItemArray[18]==1?'taphi':''}}" id="cctap18" bindtap="centerCategoryTap">宠物生活</view>
+      <view class="cenitemview {{contentItemArray[19]==1?'taphi':''}}" id="cctap19" bindtap="centerCategoryTap">图书文娱</view>
+      <view class="cenitemview {{contentItemArray[20]==1?'taphi':''}}" id="cctap20" bindtap="centerCategoryTap">艺术收藏</view>
+      <view class="cenitemview {{contentItemArray[21]==1?'taphi':''}}" id="cctap21" bindtap="centerCategoryTap">其他</view>
+  </scroll-view>
+
+  
+
+
+</view>
+
+
+<view class="bottomitem">
+  <view wx:for="{{dataArray}}" class="listitemview">
+ 
+    <image src="{{item.imageurl}}" mode="widthFix"></image>
+    <text class="listtext">{{item.nametext}}</text>
+    <text class="itemprice">￥{{item.price}}</text>
+    <text class="itemjindu">进度({{item.jindu}}%)</text>
+    <progress class="itemjindutiao" percent="{{item.jindu}}"/>
+
+  </view>
+</view>
+<view class="bottommore {{dataArray.length >=20 ?'more':''}}">{{dataArray.length >=20 ? '查看更多>>' : '暂无更多'}}</view>
